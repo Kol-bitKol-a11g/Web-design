@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #0f0f0f;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7ffe1;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+.menu {
+    height: 2.5vh;
+    /*margin: 0 10px 0 10px;*/
+}
+
+.logo {
+    height: 3.5vh;
+    /*margin: 0 10px 0 10px;*/
+}
+
+.search {
+    width: 37vw;
+    border-radius: 5vh 0 0 5vh;
+    border: 1px solid #d3d3d3;
+}
+
+.search_btm {
+    width: 4vw;
+    border-radius: 0 5vh 5vh 0;
+    border: 1px solid #d3d3d3;
+    background: url(img/srch.png) no-repeat center #f8f8f8;
+    background-size: 2.5vh;
+}
+
+.mic,
+.dot,
+.person,
+.star {
+    width: 3.5vh;
+}
+
+header input,
+header button {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 400;
+}
+
+header button {
+    margin: 0 10px 0 10px;
+    border-radius: 6vh;
+    border: 1px solid #d3d3d3;
+}
+
+header p {
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+}
+
+.no_back {
+    border: none;
+    background-color: transparent;
+}
+
+
+/*-------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    flex: 1;
+    height: 92vh;
+    position: sticky;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    background-color: lightgrey;
+    flex-direction: column;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px 5px 25px;
+    padding: 5px 0 5px 0;
+    /*background-color:#F2E8CF;*/
+    border-bottom: 1px solid lightgrey;
+}
+
+nav div a {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+nav div a p {
+    margin: 0 0 0 20px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 2px 20px 2px 25px;
+    /*background-color: #ebd08e;*/
+}
+
+
+/*------------------------------------------------*/
+
+.container {
+    flex: 5;
+}
+
+aside {
+    width: 100%;
+    height: 8vh;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: lightgrey;
+}
+
+aside div {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background-color: #f8f8f8;
+    margin: 0 0 0 20px;
+    padding: 0 12px 0 12px;
+    border-radius: 8px;
+}
+
+aside div p {
+    font-weight: 600;
+}
+
+aside div:first-child {
+    color: white;
+    background-color: #0f0f0f;
+}
+
+
+/*-----------------------------------------------*/
+
+article {
+    width: 100%;
+    height: 84vh;
+    position: sticky;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #ffffff;
+}
+
+.article {
+    width: 24vw;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    margin: 20px 20px 0 20px;
+}
+
+.video {
+    /*width: 24vw;
+                    height: 14vw;*/
+    width: 100%;
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(128, 128, 128);
+}
+
+.channel a {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.chan_ico {
+    width: 4vh;
+}
+
+.channel a p {
+    margin: 0 0 0 20px;
+}
